@@ -11,7 +11,7 @@ const fallback = require('express-history-api-fallback');
 
 const { name, version } = require('../package.json');
 const logger = require('./libs/logger');
-const env = require('./libs/env');
+const wsServer = require('./ws');
 
 const app = express();
 
@@ -56,10 +56,9 @@ const port = parseInt(process.env.BLOCKLET_PORT, 10) || 3030;
 
 const server = app.listen(port, (err) => {
   if (err) throw err;
-  logger.info(`> ${name} v${version} ready on ${port}`);
-  logger.info('> gun server ready on /gun');
+  logger.info(`> ${name} v${version} server ready on ${port}`);
 });
 
-const gun = Gun({ web: server, file: path.join(env.dataDir, 'gun.json') });
+wsServer.attach(server);
 
-module.exports = { gun, server, app };
+module.exports = { server, app, wsServer };

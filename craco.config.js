@@ -14,7 +14,7 @@ module.exports = {
         target: `http://127.0.0.1:${dappPort}`,
       },
       {
-        context: ['/gun'],
+        context: ['/websocket'],
         target: `ws://127.0.0.1:${dappPort}`,
         ws: true,
       },

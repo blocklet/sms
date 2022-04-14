@@ -1,3 +1,3 @@
-# my-blocklet
+# SMS
 
-A react template for creating a new blocklet project.
+Communicate freely with others without worrying about account leakage
