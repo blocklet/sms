@@ -8,8 +8,10 @@ Communicate freely with others without worrying about account leakage
 
 ## Todo
 
-- 黑名单
-- 停用账号
-- UX 优化
-- 时间和排序
-- i18n
+- [ ] 完善 readme 和 screenshot
+- [ ] 显示哪个账号收到了消息, 这样在账号泄露时可以知道是哪个账号泄露了
+- [ ] 停用账号
+- [ ] UX 优化: 防抖, 错误反馈等
+- [ ] 时间显示和排序优化
+- [ ] 黑名单
+- [ ] i18n
