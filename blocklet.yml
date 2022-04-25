@@ -1,5 +1,5 @@
 name: sms
-version: 0.2.0
+version: 0.2.1
 title: SMS
 description: Communicate freely with others without worrying about account leakage
 keywords:
@@ -14,7 +14,7 @@ author:
   email: linchen@arcblock.io
 repository:
   type: git
-  url: 'git+https://github.com/blocklet/create-blocklet.git'
+  url: git+https://github.com/blocklet/sms.git
 specVersion: 1.2.4
 logo: logo.png
 files:
@@ -34,10 +34,9 @@ interfaces:
       - name: auth
         config:
           blockUnauthenticated: true
-          invitedUserOnly: 'yes'
+          whoCanAccess: owner
           ignoreUrls:
             - /api/public/**
-            - /ws
 community: ''
 documentation: ''
 homepage: ''

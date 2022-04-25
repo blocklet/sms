@@ -1,6 +1,6 @@
 {
   "name": "my-blocklet",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "dev": "craco start",
     "build": "craco build",
@@ -11,7 +11,7 @@
     "start:api": "NODE_ENV=development nodemon api/index.js -w api",
     "clean": "rm -rf .blocklet",
     "bundle": "npm run bundle:client && npm run bundle:api",
-    "bundle:client": "PUBLIC_URL='/.blocklet/proxy/z8ia4zFrpmi7DRUXsvmpgY3Mopcz84Zo3G7EB' npm run build",
+    "bundle:client": "PUBLIC_URL='/.blocklet/proxy/z8iZjSK9SVYCyqFbRbttNEjyt3oeVLVugN6u3' npm run build",
     "bundle:api": "npm run clean && blocklet bundle --zip --create-release",
     "deploy": "npm run bundle && blocklet deploy .blocklet/bundle",
     "upload": "npm run bundle && blocklet upload .blocklet/release/blocklet.json",
